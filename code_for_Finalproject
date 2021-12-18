@@ -1,0 +1,197 @@
+package testing;
+import java.util.Random;
+import java.util.Scanner;
+public class item1 {
+	
+		String name;
+		int level;
+
+		public item1(String name, int level) { // constructor parameters
+		}		
+		
+		public static void main(String[] args) {
+			invalid();
+		}
+			
+		public static void invalid() {
+			// TODO Auto-generated method stub
+			
+			int Yes = 1;
+			int No = 2;
+			int choice;
+			 Scanner keyboard = new Scanner(System.in);
+			System.out.println("Hello PLAYER 1, would you like me to choose a random item for you?");
+			System.out.println("1. Yes");
+			System.out.println("2. No");
+			choice = keyboard.nextInt();
+			if(choice > 2 || choice < 1 ) {
+				 System.out.println("Error Invalid input, please Try again.");	
+				
+				 invalid(); // since input was invalid, it calls upon the previous method "invalid" again
+			}
+			else if(choice==2) {
+				System.out.println("Okay thank you, goodbye user.");
+		}
+		   else if ( choice == 1) {
+	           System.out.println("Getting your item now.");
+		  
+			item1 i1 = new item1("Sword", 1); // object creation
+			i1.name= "Sword"; 
+			i1.level = 1;
+			
+			item1 ii1 = new item1("Helmet", 2);
+			ii1.name = "Helmet";
+			ii1.level = 2;
+			
+			item1 iii1 = new item1("Gloves", 4);
+			iii1.name = "Gloves";
+			iii1.level = 4;
+			
+			item1 iiii1 = new item1("Boots", 5);
+			iiii1.name = "Gloves";
+			iiii1.level = 5;
+			
+			item1 iiiii1 = new item1("Pants", 7);
+			iiiii1.name = "Pants";
+			iiiii1.level = 7;
+			
+			
+			item1 i2 = new item1("Shield", 12);
+			i2.name= "Shield";
+			i2.level = 12;
+			
+			item1 ii2 = new item1("Dagger", 13);
+			ii2.name = "Dagger";
+			ii2.level = 13;
+			
+			item1 iii2 = new item1("Crossbow", 15);
+			iii2.name = "Crossbow";
+			iii2.level = 15;
+			
+			item1 iiii2 = new item1("Axe", 16);
+			iiii2.name = "Axe";
+			iiii2.level = 16;
+			
+			item1 iiiii2 = new item1("Chestplate", 20);
+			iiiii2.name = "Chestplate";
+			iiiii2.level = 20;
+			
+			
+			item1 i3 = new item1("Bow", 50);
+			i3.name= "Bow";
+			i3.level = 50;
+			
+			item1 ii3 = new item1("Magic Shield", 55);
+			ii3.name = "Magic Shield";
+			ii3.level = 55;
+			
+			item1 iii3 = new item1("Gauntlet", 58);
+			iii3.name = "Gauntlet";
+			iii3.level = 58;
+			
+			item1 iiii3 = new item1("Long Sword", 63);
+			iiii3.name = "Long Sword";
+			iiii3.level = 63;
+			
+			item1 iiiii3 = new item1("Pistol", 65);
+			iiiii3.name = "Pistol";
+			iiiii3.level = 65;
+			
+			
+			item1 i4 = new item1("Staff", 100);
+			i4.name= "Staff";
+			i4.level = 100;
+			
+			item1 ii4 = new item1("Magic Helmet", 101);
+			ii4.name = "Magic Helmet";
+			ii4.level = 101;
+			
+			item1 iii4 = new item1("Battle Axe", 105);
+			iii4.name = "Battle Axe";
+			iii4.level = 105;
+			
+			item1 iiii4 = new item1("Magic Bow", 110);
+			iiii4.name= "Magic Bow";
+			iiii4.level = 110;
+			
+			item1 iiiii4 = new item1("Magic Armor Set", 200);
+			iiiii4.name = "Magic Armor Set";
+			iiiii4.level = 200;
+			
+			
+	
+		
+	    Random rand = new Random(); 
+	      int upperbound = 21; // range of random # number generator (0,20)
+	      int int_random = rand.nextInt(upperbound); 
+	   
+	      
+	      System.out.println( int_random);
+	
+	switch(int_random) { // uses result of random number generator to call a certain case
+	case 1 : System.out.println("Congratulation you recieved " + "" + i1.name + " " +  "Level" + " " + i1.level);
+	break;
+	
+	case 2 : System.out.println("Congratulation you recieved " + "" + ii1.name + " " +  "Level" + " " + ii1.level);
+		break;
+	
+	case 3 : System.out.println("Congratulation you recieved " + "" + iii1.name + " " +  "Level" + " " + iii1.level);
+	break;
+	
+	case 4 : System.out.println("Congratulation you recieved " + "" + iiii1.name + " " +  "Level" + " " + iiii1.level);
+	break;
+	
+	case 5 : System.out.println("Congratulation you recieved " + "" + iiiii1.name + " " +  "Level" + " " + iiiii1.level);
+	break;
+		
+	case 6 : System.out.println("Congratulation you recieved " + "" + i2.name + " " +  "Level" + " " + i2.level);
+	break;
+	
+	case 7 : System.out.println("Congratulation you recieved " + "" + ii2.name + " " +  "Level" + " " + ii2.level);
+	break;
+	
+	case 8 : System.out.println("Congratulation you recieved " + "" + iii2.name + " " +  "Level" + " " + iii2.level);
+	break;
+	
+	case 9 : System.out.println("Congratulation you recieved " + "" + iiii2.name + " " +  "Level" + " " + iiii2.level);
+	break;
+	
+	case 10 : System.out.println("Congratulation you recieved " + "" + iiiii2.name + " " +  "Level" + " " + iiiii2.level);
+	break; 
+	
+	case 11 : System.out.println("Congratulation you recieved " + "" + i3.name + " " +  "Level" + " " + i3.level);
+	break;
+	
+	case 12 : System.out.println("Congratulation you recieved " + "" + ii3.name + " " +  "Level" + " " + ii3.level);
+	break;
+	
+	case 13 : System.out.println("Congratulation you recieved " + "" + iii3.name + " " +  "Level" + " " + iii3.level);
+	break;
+	
+	case 14 : System.out.println("Congratulation you recieved " + "" + iiii3.name + " " +  "Level" + " " + iiii3.level);
+	break;
+	
+	case 15 : System.out.println("Congratulation you recieved " + "" + iiiii3.name + " " +  "Level" + " " + iiiii3.level);
+	break;
+	
+	case 16 : System.out.println("Congratulation you recieved " + "" + i4.name + " " +  "Level" + " " + i4.level);
+	break;
+	
+	case 17 : System.out.println("Congratulation you recieved " + "" + ii4.name + " " +  "Level" + " " + ii4.level);
+	break;
+	
+	case 18 : System.out.println("Congratulation you recieved " + "" + iii4.name + " " +  "Level" + " " + iii4.level);
+	break;
+	
+	case 19 : System.out.println("Congratulation you recieved " + "" + iiii4.name + " " +  "Level" + " " + iiii4.level);
+	break;
+
+	case 20 : System.out.println("Congratulation you recieved " + "" + iiiii4.name + " " +  "Level" + " " + iiiii4.level);
+	break;
+
+	default : System.out.println("unknown item....Easter Egg");
+
+	}		
+		}
+	
+		}}
